@@ -34,7 +34,7 @@ function App() {
       },
     });
   }, []);
-  
+
   const turnYellow = useCallback(() => {
     dispatch({
       type: "ADD",
@@ -45,7 +45,7 @@ function App() {
       },
     });
   }, []);
-
+  console.log(userLog);
   return (
     <div className="App">
       <Keypress combo="shift r" callback={turnRed} description="Component A" />
